@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.container{
+    width: 85%;
+    margin: auto;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.single-card{
+    flex: 0 0 auto;
+    width: 25%;
+    margin-bottom: 80px;
+    padding: 0 10px;
+}
+
+.card-body{
+    border: 1px solid #dbdbdb;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.img-body{
+    border-radius: 15px;
+}
+
+.img-body img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.content-body{
+    padding: 15px;
+    text-align: center;
+    position: relative;
+}
+
+.content-body ul li{
+    padding: 5px 0;
+}
+
+.content-body ul li:nth-child(1){
+    color: #C79C00;
+    font-size: 14px;
+}
+
+.content-body ul li:nth-child(2){
+    color: #3d3d3d;
+    font-size: 13px;
+}
+
+.content-body ul li:nth-child(3){
+    color: #2a2a2a;
+    font-size: 15px;
+}
+
+.content-body ul li:nth-child(4){
+    color: #186ADC;
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 25px;
+}
+
+.btn {
+    position: absolute;
+    top: 94%;
+    z-index: 3;
+    width: 100%;
+    left: 0;
+}
+
+.btn a{
+    background-color: #186ADC;
+    color: rgb(246, 246, 246);
+    border-radius: 5px;
+    padding: 12px 20px;
+}
+
+
+
+
+
+
+
+/*Media Quries*/
+
+@media only screen and (max-width: 1175px) {
+    .single-card{
+        flex: 0 0 auto;
+        width: 33.33%;
+    }
+}
+
+@media only screen and (max-width: 930px) {
+    .single-card{
+        flex: 0 0 auto;
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .container{
+        width: 90%;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container{
+        width: 70%;
+        margin: auto;
+    }
+
+    .single-card{
+        flex: 0 0 auto;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .container{
+        width: 95%;
+        margin: auto;
+    }
+
+    .single-card{
+        flex: 0 0 auto;
+        width: 100%;
+    }
+}
